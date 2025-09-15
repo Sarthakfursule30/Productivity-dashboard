@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Positivity Goal Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-particles"></div>
+
+  <div class="container">
+    <div class="header">
+      <h1>✨ Positivity Goal Dashboard</h1>
+      <p class="subtitle">Transform your mindset with positive goal setting</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="card input-section">
+        <h2 class="section-title">🎯 Write Your Goal</h2>
+        <textarea 
+          id="goalInput" 
+          class="goal-input" 
+          placeholder="Write your goal here... The more positive your language, the better your score! ✨"
+        ></textarea>
+        <div class="btn-container">
+          <button id="addGoal" class="add-btn">Add Goal 🚀</button>
+        </div>
+      </div>
+
+      <div class="card positivity-meter">
+        <h2 class="section-title">💫 Positivity Meter</h2>
+        <div class="meter-container">
+          <div class="meter-bg">
+            <div class="meter-inner">
+              <div class="positivity-score" id="positivityScore">0</div>
+              <div class="positivity-label" id="positivityLabel">Neutral</div>
+            </div>
+          </div>
+        </div>
+        <div id="currentFeedback" class="feedback-text neutral-hint">
+          Start writing to see your positivity score! ✍️
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">📊 Your Stats</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" id="totalGoals">0</div>
+            <div class="stat-label">Total Goals</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="positiveGoals">0</div>
+            <div class="stat-label">Positive Goals</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="avgScore">0</div>
+            <div class="stat-label">Avg Score</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card feedback-section">
+        <div class="feedback-content">
+          <div class="feedback-title" id="feedbackTitle">🌟 Keep Writing!</div>
+          <div class="feedback-text" id="feedbackMessage">
+            Your positivity creates momentum. The more positive your language, the more inspired you'll feel to achieve your goals!
+          </div>
+        </div>
+      </div>
+
+      <div class="card goals-list">
+        <h2 class="section-title">🎯 Your Goals</h2>
+        <div id="goalsList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
